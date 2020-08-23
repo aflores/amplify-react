@@ -1,0 +1,40 @@
+{
+	"api": {
+		"amplifyreact": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"apiKeyExpirationDays": 365,
+							"description": "amplify-react-graphql"
+						}
+					},
+					"additionalAuthenticationProviders": []
+				}
+			}
+		}
+	},
+	"auth": {
+		"amplifyreactbdf7c6c3": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	},
+	"analytics": {
+		"amplifyreact": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"amplify123": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
